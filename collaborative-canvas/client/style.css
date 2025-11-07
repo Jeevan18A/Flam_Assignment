@@ -1,0 +1,130 @@
+/* client/style.css */
+:root{
+    --bg:#f3f6f9;--panel:#fff;--muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body{
+    height:100%;
+    margin:0;
+    font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+    background:var(--bg);
+    color:#111
+}
+
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8px 12px;
+    background:var(--panel);
+    border-bottom:1px solid #e6e9ee;
+    gap:12px;
+    position:sticky;
+    top:0;
+    z-index:20
+}
+
+.logo{
+    font-weight:700
+}
+
+.tools{
+    display:flex;
+    gap:8px;
+    align-items:center
+}
+
+.tools select,input[type=color],input[type=range],button{
+    padding:6px;
+    border-radius:6px;
+    border:1px solid #e6e9ee;
+    background:#fff
+}
+
+.user-area{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end
+}
+
+.me-info{
+    font-size:13px;
+    color:var(--muted)
+}
+
+.users-list{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    flex-wrap:wrap
+}
+
+.users-list .user{
+    display:flex;
+    align-items:center;
+    gap:6px;padding:4px 6px;
+    border-radius:6px;
+    background:#fbfdff;
+    font-size:13px;
+    border:1px solid #f0f3f6
+}
+
+.canvas-wrap{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px;
+    height:calc(100vh - 120px)
+}
+
+canvas#drawCanvas{
+    background:#fff;
+    border-radius:8px;
+    border:1px solid #e8eef6;
+    box-shadow:0 8px 24px rgba(14,20,30,0.06);
+    touch-action:none;
+    max-width:100%;
+    max-height:100%
+}
+
+.cursors{
+    position:absolute;
+    left:0;
+    top:0;
+    pointer-events:none;
+    width:100%;
+    height:100%
+}
+
+.cursor{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    padding:6px 8px;
+    border-radius:8px;
+    font-size:12px;
+    background:rgba(255,255,255,0.95);
+    border:1px solid #e6e9ee;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:0 6px 14px rgba(0,0,0,0.06)
+}
+
+.cursor .dot{
+    width:10px;
+    height:10px;
+    border-radius:50%
+}
+
+.footer{
+    padding:8px 12px;
+    font-size:13px;
+    color:var(--muted);
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #e6e9ee;
+    background:transparent
+}
+
+@media (max-width:720px){.tools{flex-wrap:wrap}.canvas-wrap{padding:8px;height:calc(100vh - 170px)}}
