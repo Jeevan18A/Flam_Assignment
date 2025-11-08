@@ -1,8 +1,3 @@
-Sure — here’s your cleaned and properly formatted **`README.md`** version, with **no emojis or symbols**, and ready for **direct upload to GitHub**:
-
----
-
-```markdown
 # Real-Time Collaborative Drawing Canvas
 
 ## Overview
@@ -39,8 +34,7 @@ Developed using Node.js, Socket.io, and Vanilla JavaScript (HTML5 Canvas) — wi
 
 ## Folder Structure
 
-```
-
+```plaintext
 collaborative-canvas/
 ├── client/
 │   ├── index.html          # UI and Canvas
@@ -58,10 +52,8 @@ collaborative-canvas/
 ├── package.json
 ├── README.md
 └── ARCHITECTURE.md
-
 ````
 
----
 
 ## Installation and Setup
 
@@ -69,7 +61,7 @@ collaborative-canvas/
 ```bash
 git clone https://github.com/your-username/collaborative-canvas.git
 cd collaborative-canvas
-````
+```
 
 ### Step 2: Install Dependencies
 
@@ -126,10 +118,10 @@ The server runs at:
 
 ## Author
 
-Developed by: A Jeevan Reddy
-For: Flam Company Assignment
-Environment: Visual Studio Code
-Date: November 2025
+**Developed by:** A Jeevan Reddy  
+**For:** Flam Company Assignment  
+**Environment:** Visual Studio Code  
+**Date:** November 2025
 
 ---
 
